@@ -1,3 +1,5 @@
+import './style.css';
+
 const Product = (props) => {
 
     const Product = {
@@ -18,40 +20,22 @@ const Product = (props) => {
 
 return (
     <>
-        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img className="d-block w-100" src="https://binaryville.com/images/products/fred-0s1s-tshirt-black.jpg"
-                         alt="First slide"/>
-                </div>
-                <div className="carousel-item">
-                    <img className="d-block w-100" src="https://binaryville.com/images/products/fred-0s1s-tshirt-gray.jpg"
-                         alt="Second slide"/>
-                </div>
-                <div className="carousel-item">
-                    <img className="d-block w-100" src=".https://binaryville.com/images/products/fred-0s1s-tshirt-white.jpg"
-                         alt="Third slide"/>
-                </div>
+        <div className="product-container">
+            <div className="product-details">
+                 <h4 className="product-title">It's All 0's and 1's to Me! Apron</h4>
+                   <p className="description">Cheer the team on in style with our unstructured, low crown, six-panel baseball
+                       ap made of 100% organic cotton twill. Featuring our original Binaryville artwork,
+                       screen-printed with PVC- and phthalate-free inks. Complete with matching, sewn
+                       eyelets, and adjustable fabric closure.</p>
+                   <p className="category">Category: Aprons </p>
+                   <p className="character">Character: Fred </p>
+                   <p className="">Price: $24</p>
+                   <button type="button" className="btn btn-primary">Add to bag</button>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
+            <div className="product-images">
+                 <img src="https://binaryville.com/images/products/fred-0s1s-apron-black.jpg"/>
+            </div>
         </div>
-
-        <div>
-        <h4>I Compute, Therefore I Am Baseball Hat</h4>
-            <p>Cheer the team on in style with our unstructured, low crown, six-panel baseball
-                cap made of 100% organic cotton twill. Featuring our original Binaryville artwork,
-                screen-printed with PVC- and phthalate-free inks. Complete with matching, sewn
-                eyelets, and adjustable fabric closure.</p>
-
-        </div>
-
     </>
 
 );
