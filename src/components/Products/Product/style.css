@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 20vw;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.product-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    width: 10rem;
+}
