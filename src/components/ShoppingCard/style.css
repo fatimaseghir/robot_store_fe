@@ -1,0 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+    width: 1.8rem;
+    margin-left: 1.7rem;
+
+}

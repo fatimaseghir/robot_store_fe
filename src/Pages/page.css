@@ -1,0 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.web-structure {
+    width: 80vw;
+    margin: 0 auto;
+}
