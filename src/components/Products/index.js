@@ -51,7 +51,7 @@ const Products = () => {
                         <h4 >{product.title}</h4>
                         <img src={product.image} />
                         <div className="price">
-                        <h4 >£ {product.price}.00</h4>
+                        <h4 >$ {product.price}.00</h4>
                         <button type="button" className="btn btn-primary">Add to bag</button>
                         </div>
                         </div>
