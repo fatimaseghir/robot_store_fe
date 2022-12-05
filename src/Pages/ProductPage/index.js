@@ -1,8 +1,8 @@
 import '../page.css';
-import Title from "../../components/Title";
-import ShoppingCard from "../../components/ShoppingCard";
-import NavBar from "../../components/NavBar";
-import Product from "../../components/Products/Product";
+import Title from "../../Components/Title";
+import ShoppingCard from "../../Components/ShoppingCard";
+import NavBar from "../../Components/NavBar";
+import Product from "../../Components/Products/Product";
 
 const ProductsPage = () => {
     return (
