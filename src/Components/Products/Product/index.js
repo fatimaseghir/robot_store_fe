@@ -1,22 +1,7 @@
 import './style.css';
 
-const Product = (props) => {
 
-    const Product = {
-        _id: "",
-        id: "",
-        title: "",
-        price: "",
-        image: "",
-        category_id: "",
-        category: "",
-        character_id: "",
-        character: "",
-        description: "",
-        image2: "",
-        image3: ""
-    }
-
+const Product = () => {
 
 return (
     <>
@@ -30,7 +15,7 @@ return (
                    <p className="category">Category: Aprons </p>
                    <p className="character">Character: Fred </p>
                    <p className="">Price: $24</p>
-                   <button type="button" className="btn btn-primary">Add to bag</button>
+                <button type="button" className="btn btn-primary">Add to bag</button>
             </div>
             <div className="product-images">
                  <img src="https://binaryville.com/images/products/fred-0s1s-apron-black.jpg"/>
