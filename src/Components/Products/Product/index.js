@@ -1,28 +1,42 @@
+import {useEffect, useState} from "react";
 import './style.css';
 
+const Product = (props) => {
 
-const Product = () => {
+    const {id} = props;
+    const [productState, setProductState] = useState([]);
+
+    const extractResponseData = (response) => {
+        return response.json();
+    }
+    const fetchProductState = async (id) => {
+        const response = await fetch(`http://localhost:3000/robot_stores/${id}`);
+        return await extractResponseData(response);
+    }
+
+    useEffect( () => {
+        fetchProductState(id)
+            .then(productData => {
+                setProductState(productData[0]);
+                console.log(productData);
+            })}, []);
 
 return (
     <>
         <div className="product-container">
             <div className="product-details">
-                 <h4 className="product-title">It's All 0's and 1's to Me! Apron</h4>
-                   <p className="description">Cheer the team on in style with our unstructured, low crown, six-panel baseball
-                       ap made of 100% organic cotton twill. Featuring our original Binaryville artwork,
-                       screen-printed with PVC- and phthalate-free inks. Complete with matching, sewn
-                       eyelets, and adjustable fabric closure.</p>
-                   <p className="category">Category: Aprons </p>
-                   <p className="character">Character: Fred </p>
-                   <p className="">Price: $24</p>
+                 <h4 className="product-title"> {productState.title}</h4>
+                   <p className="description"> {productState.description}</p>
+                   <p className="category">Category: {productState.category}</p>
+                   <p className="character">Character: {productState.character}</p>
+                   <p className="">$ {productState.price}</p>
                 <button type="button" className="btn btn-primary">Add to bag</button>
             </div>
             <div className="product-images">
-                 <img src="https://binaryville.com/images/products/fred-0s1s-apron-black.jpg"/>
+                 <img src={productState.image}/>
             </div>
         </div>
     </>
-
 );
 }
 

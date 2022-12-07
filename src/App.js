@@ -2,7 +2,6 @@ import {Route, Routes} from "react-router-dom";
 import ProductsPage from "./Pages/ProductsPage";
 import ProductPage from "./Pages/ProductPage";
 
-
 function App() {
   return (
     <Routes>
