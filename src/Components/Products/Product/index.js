@@ -21,6 +21,9 @@ const Product = (props) => {
                 console.log(productData);
             })}, []);
 
+    const [liked, setLiked] = useState(false);
+    const handleLikedShow = () => setLiked(true);
+
 return (
     <>
         <div className="product-container">
@@ -31,6 +34,7 @@ return (
                    <p className="character">Character: {productState.character}</p>
                    <p className="">$ {productState.price}</p>
                 <button type="button" className="btn btn-primary">Add to bag</button>
+                <button onClick={handleLikedShow} ><img className="logo" src={require('../images/like.png')} alt="image" ></img></button>
             </div>
             <div className="product-images">
                  <img src={productState.image}/>

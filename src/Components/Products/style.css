@@ -5,7 +5,7 @@
 }
 
 img {
-    width: 20vw;
+    width: 22vw;
     text-align: center;
     margin: 2rem;
 }
@@ -23,16 +23,27 @@ a:link {
 
 .item {
     margin-top: 4rem;
-    width: 20vw;
+    width: 22vw;
     display: flex;
     flex-direction: column;
+}
 
+.logo {
+    width: 1.8rem;
+    margin-left: 1.5rem;
+}
+
+button {
+    background-color: white;
+    border: 0.5px solid white;
+    height: 2rem;
 }
 
 .price {
-    display: flex;
-    justify-content: space-evenly;
-
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
 }
+
 
 

@@ -26,6 +26,9 @@ const Products = () => {
             .catch(err => err.message = 'Error here!')
     }, []);
 
+    const [liked, setLiked] = useState(false);
+    const handleLikedShow = () => setLiked(true);
+
     return (
         <ul className="container" >
             { products.map((product) => {
@@ -35,8 +38,9 @@ const Products = () => {
                                 <h4>{product.title}</h4>
                                 <img src={product.image} />
                                 <div className="price">
-                                    <h5 >$ {product.price}.00</h5>
-                                    <button type="button" className="btn btn-primary">Add to bag</button>
+                                    <button type="button" className="mt-4 btn btn-primary">Add to bag</button>
+                                    <button onClick={handleLikedShow} ><img className="logo" src={require('./images/like.png')} alt="image" ></img></button>
+                                    <h5 className="mt-4">$ {product.price}.00</h5>
                                 </div>
                             </Link>
                         </div>
