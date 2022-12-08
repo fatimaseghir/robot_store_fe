@@ -1,13 +1,13 @@
 import '../page.css';
 import Title from "../../Components/Title";
-import ShoppingCard from "../../Components/ShoppingCard";
+import ShoppingCart from "../../Components/ShoppingCart";
 
 const ProductsPage = () => {
     return (
         <>
             <div className="web-structure">
                 <Title/>
-                <ShoppingCard/>
+                <ShoppingCart/>
             </div>
         </>
     );

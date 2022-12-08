@@ -12,3 +12,10 @@ button {
     background-color: white;
     border: 2px solid white;
 }
+
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: flex-end;
+}

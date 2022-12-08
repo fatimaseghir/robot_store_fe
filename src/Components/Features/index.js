@@ -22,7 +22,7 @@ const Features = () => {
                 <ModalHeader closeButton/>
                 <ModalTitle> Liked Items, save for later </ModalTitle>
         </Modal>
-        <div className="shopping-card text-end pb-4 me-5">
+        <div className="shopping-cart text-end pb-4 me-5">
             <button onClick={handleLikedShow} ><img className="logo" src={require('./images/like.png')} alt="image" ></img></button>
             <button onClick={handleShow} ><img className="logo" src={require('./images/bag.png')} alt="image" ></img></button>
         </div>
