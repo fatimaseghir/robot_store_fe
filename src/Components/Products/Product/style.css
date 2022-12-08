@@ -4,22 +4,33 @@
 }
 
 img {
-    width: 20vw;
-}
-
-.product-details {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
+    margin-top: 2rem;
+    width: 80vw;
 }
 
 .product-container {
     margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 button {
     width: 9rem;
+}
+
+@media (min-width: 750px) {
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img {
+        width: 20vw;
+    }
 }

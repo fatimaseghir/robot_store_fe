@@ -35,8 +35,8 @@ const Products = () => {
                     return (
                         <div className="item" id={product.id} key={product.id}>
                             <Link to={`/product/${product.id}`}>
-                                <h4>{product.title}</h4>
-                                <img src={product.image} />
+                                <h4 className="pt-5 ">{product.title}</h4>
+                                <img className="product-img" src={product.image} />
                                 <div className="price">
                                     <button type="button" className="mt-4 btn btn-primary">Add to bag</button>
                                     <button onClick={handleLikedShow} ><img className="logo" src={require('./images/like.png')} alt="image" ></img></button>
